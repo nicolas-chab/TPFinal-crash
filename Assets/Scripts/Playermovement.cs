@@ -38,20 +38,16 @@ public class Playermovement : MonoBehaviour
         {
             transform.position += new Vector3(0, 0, -movementSpeed);
         }
-        if (Input.GetKey(KeyCode.D) && hasJump == maxJumps)
-        {
-            transform.Rotate(0, movementSpeed, 0);
-        }
-        if (Input.GetKey(KeyCode.A) && hasJump == maxJumps)
-        {
-            transform.Rotate(0, -movementSpeed, 0);
-        }
+
         if (Input.GetKeyDown(KeyCode.Space) && hasJump > 0)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-
+            hasJump--;
         }
-
+        if (transform.position.y < -1)
+        {
+            Destroy(gameObject);
+        }
     }
     void OnCollisionEnter(Collision col)
     {
@@ -60,4 +56,5 @@ public class Playermovement : MonoBehaviour
             hasJump = maxJumps;
         }
     }
+
 }

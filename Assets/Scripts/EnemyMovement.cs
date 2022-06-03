@@ -26,20 +26,20 @@ public class EnemyMovement : MonoBehaviour
     {
         if (toRight == true)
         {
-            transform.position += new Vector3(speed, 0, 0);
+            transform.position += new Vector3(0, 0, speed);
         }
         else
         {
-            transform.position -= new Vector3(speed, 0, 0);
+            transform.position -= new Vector3(0, 0, speed);
         }
 
-        if (transform.position.x > enemigoDer.transform.position.x - 1)
+        if (transform.position.z > enemigoDer.transform.position.z - 1)
         {
             toRight = false;
            
 
         }
-        if (transform.position.x < enemigoIzq.transform.position.x + 1)
+        if (transform.position.z < enemigoIzq.transform.position.z + 1)
         {
             toRight = true;
 
