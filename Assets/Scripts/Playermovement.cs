@@ -55,6 +55,14 @@ public class Playermovement : MonoBehaviour
         {
             hasJump = maxJumps;
         }
+        
+        
+         if (col.gameObject.tag == "Enemy")
+          {
+                Destroy(gameObject);
+          }
+        
     }
+
 
 }
