@@ -348,13 +348,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -5.49, y: 1.76, z: -0.43}
+  m_LocalRotation: {x: 0.14182173, y: 0.6927385, z: -0.14182176, w: 0.6927385}
+  m_LocalPosition: {x: -5.49, y: 6.41, z: -0.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.140001, y: 90.00001, z: 0}
 --- !u!1 &653608414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2634997021430688701, guid: 821751d9d9bd2ac4fb91365062a28cff,
@@ -391,7 +391,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 54
   m_CollisionDetection: 0
 --- !u!1 &1594202792
 GameObject:
@@ -701,17 +701,17 @@ PrefabInstance:
     - target: {fileID: 8206607962672059452, guid: 821751d9d9bd2ac4fb91365062a28cff,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8206607962672059452, guid: 821751d9d9bd2ac4fb91365062a28cff,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8206607962672059452, guid: 821751d9d9bd2ac4fb91365062a28cff,
         type: 3}
       propertyPath: m_Size.z
-      value: 1.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8360649047154900949, guid: 821751d9d9bd2ac4fb91365062a28cff,
         type: 3}
@@ -837,6 +837,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6512718494580537837, guid: bc8a878fbe41cd743bc3bec6379c2086,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6512718494580537837, guid: bc8a878fbe41cd743bc3bec6379c2086,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7821814152996301722, guid: bc8a878fbe41cd743bc3bec6379c2086,
         type: 3}
       propertyPath: m_Constraints
@@ -845,7 +855,7 @@ PrefabInstance:
     - target: {fileID: 7821814152996301723, guid: bc8a878fbe41cd743bc3bec6379c2086,
         type: 3}
       propertyPath: jumpForce
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7821814152996301723, guid: bc8a878fbe41cd743bc3bec6379c2086,
         type: 3}
