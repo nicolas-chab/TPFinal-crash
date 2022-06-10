@@ -4,37 +4,15 @@ using UnityEngine;
 
 public class Cameramovement : MonoBehaviour
 {
-    public bool forward;   
-    public GameObject positionPlayer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public Transform targetTR;
+   
     // Update is called once per frame
     void Update()
     {
+        Vector3 currentEulerAngles = transform.eulerAngles;
+        transform.LookAt(targetTR);
+        transform.eulerAngles = new Vector3(currentEulerAngles.x, transform.eulerAngles.y, currentEulerAngles.z);
 
-        if (forward == true)
-        {
-            transform.position += new Vector3(0, 0, 0);
-        }
-        else
-        {
-            transform.position -= new Vector3(0, 0, 0);
-        }
-
-        if (transform.position.x > positionPlayer.transform.position.x +4.5)
-        {
-            transform.position += new Vector3(0+1, 0, 0);
-
-
-        }
-        if (transform.position.x < positionPlayer.transform.position.x -4.5)
-        {
-            forward = true;
-
-        }
     }
 }
+
