@@ -8,7 +8,8 @@ public class Playermovement : MonoBehaviour
     public float movementSpeed;
     public float jumpForce;
     public int maxJumps;
-
+    public AudioManager miAm;
+    public float waitforcameraadjustment;
     int hasJump;
     Rigidbody rb;
     // Start is called before the first frame update
@@ -22,31 +23,31 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        waitforcameraadjustment -= Time.deltaTime;
+        if (waitforcameraadjustment < 0)
         {
-            transform.position += new Vector3(movementSpeed, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position += new Vector3(-movementSpeed, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += new Vector3(0, 0, movementSpeed);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += new Vector3(0, 0, -movementSpeed);
-        }
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.position += new Vector3(movementSpeed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.position += new Vector3(-movementSpeed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.position += new Vector3(0, 0, movementSpeed);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.position += new Vector3(0, 0, -movementSpeed);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space) && hasJump > 0)
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            hasJump--;
-        }
-        if (transform.position.y < -1)
-        {
-            Destroy(gameObject);
+            if (Input.GetKeyDown(KeyCode.Space) && hasJump > 0)
+            {
+                rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                hasJump--;
+            }
         }
     }
     void OnCollisionEnter(Collision col)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Killenemyjumpon : MonoBehaviour
 {
+    public AudioManager miAm;
     public GameObject enemyWhoDies;
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class Killenemyjumpon : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            miAm.PlayClipEnemy();
             Destroy(enemyWhoDies);
         }
     }
