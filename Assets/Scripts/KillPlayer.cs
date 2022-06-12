@@ -19,7 +19,7 @@ public class KillPlayer : MonoBehaviour
         if (transform.position.y < -1)
         {
             lifeSystem.TakeLife();
-            miAm.PlayClip();
+            miAm.PlayClipEnemy();
             Player.transform.position = RespawnPoint.transform.position;
         }
     }

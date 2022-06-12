@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4049232343347069652}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Enemy
+  m_TagString: BOX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a229836fbc8a9840939c4bb8e07199d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miAm: {fileID: 0}
   enemyWhoDies: {fileID: 2634997021430688701}
 --- !u!23 &9206917543093582102
 MeshRenderer:
@@ -119,7 +120,7 @@ GameObject:
   - component: {fileID: 2119711569102485441}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Enemy
+  m_TagString: BOX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
