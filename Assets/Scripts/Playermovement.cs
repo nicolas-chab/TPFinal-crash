@@ -12,6 +12,9 @@ public class Playermovement : MonoBehaviour
     public float waitforcameraadjustment;
     int hasJump;
     Rigidbody rb;
+    public GameObject fruit;
+
+    public GameObject enemyWhoDies;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +53,7 @@ public class Playermovement : MonoBehaviour
             }
         }
     }
+    
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "ground")
@@ -57,6 +61,7 @@ public class Playermovement : MonoBehaviour
             hasJump = maxJumps;
         }
     }
+    
 
 
 }
