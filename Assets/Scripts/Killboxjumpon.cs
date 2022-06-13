@@ -25,8 +25,9 @@ public class Killboxjumpon : MonoBehaviour
             for(int i = 0;i<1; i++)
             {
                 Destroy(enemyWhoDies);
-                //miAm.PlayClipBox();
+                miAm.PlayClipBox();
                 fruit.SetActive(true);
+               
                 Instantiate(fruit);
             }
             

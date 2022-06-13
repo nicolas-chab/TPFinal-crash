@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class Fruitrotation : MonoBehaviour
 {
-    public GameObject fruit;
 
+    public float rotation;
 
+    void Start()
+    {
+  
+    }
     // Update is called once per frame
     void Update()
     {
+        transform.Rotate(0, rotation, 0);
+       
         
+
     }
 }
