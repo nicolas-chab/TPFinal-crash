@@ -22,7 +22,7 @@ public class Killboxjumpon : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            for(int i = 0;i<1; i++)
+            for(int i = 0;i<5; i++)
             {
                 Destroy(enemyWhoDies);
                 miAm.PlayClipBox();

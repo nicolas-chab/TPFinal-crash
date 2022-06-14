@@ -9,7 +9,7 @@ public class Playerlives : MonoBehaviour
     public int startingLives;
     private int lifeCounter;
     private Text text;
-    public GameObject GameOverScreen;
+    
     public static int Fruitcount;
     // Start is called before the first frame update
     void Start()
