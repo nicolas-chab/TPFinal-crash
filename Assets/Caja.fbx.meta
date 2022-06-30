@@ -1,57 +1,58 @@
 fileFormatVersion: 2
-guid: e56e9bfd69d96fe459233a65f2e4a426
+guid: e4bf414904d787a4fbdd372fca2639be
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cylinder
-    100002: //RootNode
-    100004: Sphere
-    100006: Torus
-    100008: Torus.001
-    100010: Torus.002
-    100012: Torus.003
-    400000: Cylinder
-    400002: //RootNode
-    400004: Sphere
-    400006: Torus
-    400008: Torus.001
-    400010: Torus.002
-    400012: Torus.003
-    2100000: Material.005
-    2100002: Material.001
-    2100004: Material.004
-    2100006: Material.002
-    2100008: Material.006
-    2100010: Material.003
-    2300000: Cylinder
-    2300002: Sphere
-    2300004: Torus
-    2300006: Torus.001
-    2300008: Torus.002
-    2300010: Torus.003
-    3300000: Cylinder
-    3300002: Sphere
-    3300004: Torus
-    3300006: Torus.001
-    3300008: Torus.002
-    3300010: Torus.003
-    4300000: Torus
-    4300002: Torus.001
-    4300004: Torus.002
-    4300006: Torus.003
-    4300008: Sphere
-    4300010: Cylinder
+    100000: //RootNode
+    400000: //RootNode
+    2100000: Material.035
+    2100002: Material.009
+    2100004: Material.048
+    2100006: Material.047
+    2100008: Material.049
+    2100010: Material.004
+    2100012: Material.005
+    2100014: Material.006
+    2100016: Material.007
+    2100018: Material.008
+    2100020: Material.010
+    2100022: Material.011
+    2100024: Material.012
+    2100026: Material.013
+    2100028: Material.014
+    2100030: Material.015
+    2100032: Material.016
+    2100034: Material.020
+    2100036: Material.021
+    2100038: Material.022
+    2100040: Material.001
+    2100042: Material.024
+    2100044: Material.025
+    2100046: Material.026
+    2100048: Material.027
+    2100050: Material.030
+    2100052: Material.032
+    2100054: Material.033
+    2100056: Material.034
+    2100058: Material.036
+    2100060: Material.040
+    2100062: Material.041
+    2100064: Material.042
+    2100066: Material.043
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube.029
   externalObjects:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: lH8yTHvm
-    second: {fileID: 2800000, guid: b433af9542713714ba36dc41dbfa3f4f, type: 3}
+    second: {fileID: 2800000, guid: 29643db271c964d4ea8ee15902f4c1cc, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: lH8yTHvm (1)
-    second: {fileID: 2800000, guid: 4d9f5483983116d4884611a6d0b3d99e, type: 3}
+    second: {fileID: 2800000, guid: d99118b752a024a4dac488fcc646456f, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
@@ -85,7 +86,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    useSRGBMaterialColor: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

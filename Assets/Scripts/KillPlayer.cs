@@ -7,6 +7,7 @@ public class KillPlayer : MonoBehaviour
      public Transform RespawnPoint;
     public AudioManager miAm;
     private Playerlives lifeSystem;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class KillPlayer : MonoBehaviour
             lifeSystem.TakeLife();
             miAm.PlayClip();
             Player.transform.position = RespawnPoint.transform.position;
+            
            
         }
 

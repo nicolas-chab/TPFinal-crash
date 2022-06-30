@@ -22,6 +22,8 @@ public class Killenemyjumpon : MonoBehaviour
         {
             miAm.PlayClipEnemy();
             Destroy(enemyWhoDies);
+            
+            
         }
     }
 }
