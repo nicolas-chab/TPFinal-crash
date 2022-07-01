@@ -20,7 +20,7 @@ public class FRUIT : MonoBehaviour
     void Update()
     {
         Coincounter.text = "" + coincount;
-        if (coincount == 4)
+        if (coincount >= 4)
         {
             lifeSystem.GiveLife();
             coincount = 0;
